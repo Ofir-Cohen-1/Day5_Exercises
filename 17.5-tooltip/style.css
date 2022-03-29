@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: purple;
+    position: relative;
+    display: inline-block;
+}
+
+a[data-tooltip="tip"]:hover:before {
+    content: "this is a badass tooltip";
+    position: absolute;
+    background: orange;
+    color: rgb(36, 34, 34);
+    height: 22px;
+    top: -25px;
+    padding: 0 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+a[data-tooltip="tip"]:hover:after {
+    content: '';
+    position: absolute;
+    background: orange;
+    width: 20px;
+    height: 10px;
+    top: -13px;
+    left: 20px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+/* a {
+    text-decoration: none;
+    color: coral;
+    position: relative;
+}
+
+a[data-tooltip="tip"]:hover:before {
+    position: absolute;
+    content: "Truly it's a badass tooltip";
+    background: darkmagenta;
+    color: aqua;
+    width: 165px;
+    height: 22px;
+    top: -25px;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+a[data-tooltip="tip"]:hover:after {
+    position: absolute;
+    content: "";
+    background: darkmagenta;
+    width: 20px;
+    height: 10px;
+    top: -13px;
+    left: 20px;
+    transform: rotate(45deg);
+    z-index: -1;
+} */
